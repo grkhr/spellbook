@@ -10,7 +10,7 @@
 
 
 
-with
+with 
 
 settlements(contract_address, blockchain) as (values
     (0xa88800cd213da5ae406ce248380802bd53b47647, 'ethereum')
