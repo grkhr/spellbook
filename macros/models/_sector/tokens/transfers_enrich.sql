@@ -42,4 +42,3 @@ LEFT JOIN {{ source('prices', 'usd') }} prices ON prices.blockchain = '{{blockch
     {% if is_incremental() %}
     WHERE {{incremental_predicate('t.block_time')}} AND {{incremental_predicate('prices.minute')}}
     {% endif %}
-{%- endmacro %}
